@@ -17,7 +17,11 @@ fn simple_custom_fn() {
     std::env::set_var("ANOTHER", "5");
 
     let func = || {
-        to_value(TestCfg{test: "from func".to_string(), another: 25}).unwrap()
+        to_value(TestCfg {
+            test: "from func".to_string(),
+            another: 25,
+        })
+        .unwrap()
     };
 
     let prio = vec![Layer::CustomFn(func.into()), Layer::Env(None)];
