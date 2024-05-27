@@ -92,3 +92,4 @@ cargo test --all-features
 # Alternatives
 
 - [config-rs](https://github.com/mehcode/config-rs) is almost doing the same except the environment layer (for example we support hashmap and array in environment variables). Also `config-rs` don't have clap support and it didn't use any proc-macros if you're not very fan of proc-macros.
+- [Figment](https://github.com/SergioBenitez/Figment) very convenient but lacks useful features like variable expansion and accessing nested fields using a formatted path
